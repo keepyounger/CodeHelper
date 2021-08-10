@@ -15,12 +15,14 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     var isSwift = false
     var invocation: XCSourceEditorCommandInvocation!
     var buffer: XCSourceTextBuffer!
+    var firstSelection: XCSourceTextRange!
     var completionHandler: ((Error?) -> Void)!
     
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) -> Void {
         
         self.invocation = invocation
-        buffer = invocation.buffer
+        self.buffer = invocation.buffer
+        self.firstSelection = invocation.buffer.selections.firstObject as? XCSourceTextRange
         self.completionHandler = completionHandler
         
         // public.objective-c-source
@@ -34,16 +36,13 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         
     }
     
-    func stringForSelected() -> String {
-        var jsonString = ""
-        let textRange = buffer.selections.firstObject as! XCSourceTextRange
-        let start = textRange.start
-        let end = textRange.end
-        if start.line != end.line || (start.line == end.line && start.column != end.column) {
-            for line in textRange.start.line...textRange.end.line {
-                jsonString += (buffer.lines[line] as! String)
+    var selectedString: String {
+        var string = ""
+        if firstSelection.start.line != firstSelection.end.line || firstSelection.start.column != firstSelection.end.column {
+            for line in firstSelection.start.line...firstSelection.end.line {
+                string += (buffer.lines[line] as! String)
             }
         }
-        return jsonString
+        return string
     }
 }

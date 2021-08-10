@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A31577C26C246DE00D34680 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A31577B26C246DE00D34680 /* XcodeKit.framework */; };
+		5A31577D26C246DE00D34680 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A31577B26C246DE00D34680 /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A6DC41621F9708100AEACF6 /* Json2Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A6DC41521F9708100AEACF6 /* Json2Property.swift */; };
 		5A7A436B21A40B5100A277A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A436A21A40B5100A277A3 /* AppDelegate.swift */; };
 		5A7A436D21A40B5100A277A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A436C21A40B5100A277A3 /* ViewController.swift */; };
@@ -29,6 +31,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5A31577E26C246DE00D34680 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A31577D26C246DE00D34680 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5A7A438F21A40BE800A277A3 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +56,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5A31577B26C246DE00D34680 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		5A6DC41521F9708100AEACF6 /* Json2Property.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json2Property.swift; sourceTree = "<group>"; };
 		5A7A436721A40B5100A277A3 /* CodeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7A436A21A40B5100A277A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7A438121A40BE800A277A3 /* Cocoa.framework in Frameworks */,
+				5A31577C26C246DE00D34680 /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +128,7 @@
 		5A7A437F21A40BE800A277A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A31577B26C246DE00D34680 /* XcodeKit.framework */,
 				5A7A438021A40BE800A277A3 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -159,6 +175,7 @@
 				5A7A437A21A40BE800A277A3 /* Sources */,
 				5A7A437B21A40BE800A277A3 /* Frameworks */,
 				5A7A437C21A40BE800A277A3 /* Resources */,
+				5A31577E26C246DE00D34680 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,7 +407,7 @@
 				CODE_SIGN_ENTITLEMENTS = CodeHelper/CodeHelper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R9FM9QJB4R;
+				DEVELOPMENT_TEAM = 5Q4AG89742;
 				INFOPLIST_FILE = CodeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +427,7 @@
 				CODE_SIGN_ENTITLEMENTS = CodeHelper/CodeHelper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R9FM9QJB4R;
+				DEVELOPMENT_TEAM = 5Q4AG89742;
 				INFOPLIST_FILE = CodeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -428,7 +445,7 @@
 				CODE_SIGN_ENTITLEMENTS = EditorExtension/EditorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R9FM9QJB4R;
+				DEVELOPMENT_TEAM = 5Q4AG89742;
 				INFOPLIST_FILE = EditorExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,7 +465,7 @@
 				CODE_SIGN_ENTITLEMENTS = EditorExtension/EditorExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = R9FM9QJB4R;
+				DEVELOPMENT_TEAM = 5Q4AG89742;
 				INFOPLIST_FILE = EditorExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
