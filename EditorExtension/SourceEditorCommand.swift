@@ -29,7 +29,9 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         // public.swift-source
         isSwift = (invocation.buffer.contentUTI == "public.swift-source")
         
-        commandDidClick()
+        if invocation.commandIdentifier == "\(type(of: self))" {
+            commandDidClick()
+        }
     }
     
     func commandDidClick() {

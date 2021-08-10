@@ -36,6 +36,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Json to Property</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).LazyProperty</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>LazyProperty</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Lazy Property</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>
