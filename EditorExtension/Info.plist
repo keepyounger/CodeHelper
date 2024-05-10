@@ -44,6 +44,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Lazy Property</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).OC2SwiftProperty</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>OC2SwiftProperty</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>OC to Swift Property</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

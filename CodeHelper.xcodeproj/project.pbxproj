@@ -18,6 +18,7 @@
 		5A7A438421A40BE800A277A3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A438321A40BE800A277A3 /* SourceEditorExtension.swift */; };
 		5A7A438621A40BE800A277A3 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A438521A40BE800A277A3 /* SourceEditorCommand.swift */; };
 		5A7A438B21A40BE800A277A3 /* EditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A7A437E21A40BE800A277A3 /* EditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5AC5DEBA2BEE0E6B009790DB /* OC2SwiftProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC5DEB92BEE0E6B009790DB /* OC2SwiftProperty.swift */; };
 		5AEC040A26C2751000B01AB4 /* LazyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC040926C2751000B01AB4 /* LazyProperty.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		5A7A438521A40BE800A277A3 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
 		5A7A438721A40BE800A277A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7A438821A40BE800A277A3 /* EditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EditorExtension.entitlements; sourceTree = "<group>"; };
+		5AC5DEB92BEE0E6B009790DB /* OC2SwiftProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OC2SwiftProperty.swift; sourceTree = "<group>"; };
 		5AEC040926C2751000B01AB4 /* LazyProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyProperty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 				5A7A438521A40BE800A277A3 /* SourceEditorCommand.swift */,
 				5A6DC41521F9708100AEACF6 /* Json2Property.swift */,
 				5AEC040926C2751000B01AB4 /* LazyProperty.swift */,
+				5AC5DEB92BEE0E6B009790DB /* OC2SwiftProperty.swift */,
 				5A7A438721A40BE800A277A3 /* Info.plist */,
 				5A7A438821A40BE800A277A3 /* EditorExtension.entitlements */,
 			);
@@ -263,6 +266,7 @@
 				5A7A438621A40BE800A277A3 /* SourceEditorCommand.swift in Sources */,
 				5AEC040A26C2751000B01AB4 /* LazyProperty.swift in Sources */,
 				5A6DC41621F9708100AEACF6 /* Json2Property.swift in Sources */,
+				5AC5DEBA2BEE0E6B009790DB /* OC2SwiftProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
